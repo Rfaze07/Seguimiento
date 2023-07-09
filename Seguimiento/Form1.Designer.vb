@@ -24,38 +24,56 @@ Partial Class FrmPrincipal
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmPrincipal))
         Me.PanelMenu = New System.Windows.Forms.Panel()
+        Me.btnCubiertas = New System.Windows.Forms.Button()
         Me.btnCamiones = New System.Windows.Forms.Button()
         Me.PanelLogo = New System.Windows.Forms.Panel()
         Me.pbLogo = New System.Windows.Forms.PictureBox()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.btnCubiertas = New System.Windows.Forms.Button()
         Me.PanelMenu.SuspendLayout()
         Me.PanelLogo.SuspendLayout()
         CType(Me.pbLogo, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'PanelMenu
         '
         Me.PanelMenu.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(163, Byte), Integer), CType(CType(82, Byte), Integer))
+        Me.PanelMenu.BackgroundImage = CType(resources.GetObject("PanelMenu.BackgroundImage"), System.Drawing.Image)
+        Me.PanelMenu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
         Me.PanelMenu.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.PanelMenu.Controls.Add(Me.btnCubiertas)
         Me.PanelMenu.Controls.Add(Me.btnCamiones)
         Me.PanelMenu.Controls.Add(Me.PanelLogo)
+        Me.PanelMenu.Cursor = System.Windows.Forms.Cursors.Hand
         Me.PanelMenu.Dock = System.Windows.Forms.DockStyle.Left
-        Me.PanelMenu.ForeColor = System.Drawing.SystemColors.Control
+        Me.PanelMenu.ForeColor = System.Drawing.SystemColors.ControlDarkDark
         Me.PanelMenu.Location = New System.Drawing.Point(0, 0)
         Me.PanelMenu.Name = "PanelMenu"
         Me.PanelMenu.Size = New System.Drawing.Size(230, 719)
         Me.PanelMenu.TabIndex = 0
         '
+        'btnCubiertas
+        '
+        Me.btnCubiertas.BackColor = System.Drawing.Color.Black
+        Me.btnCubiertas.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnCubiertas.Dock = System.Windows.Forms.DockStyle.Top
+        Me.btnCubiertas.FlatAppearance.BorderColor = System.Drawing.Color.Silver
+        Me.btnCubiertas.FlatAppearance.BorderSize = 2
+        Me.btnCubiertas.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnCubiertas.Font = New System.Drawing.Font("Calibri", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnCubiertas.Location = New System.Drawing.Point(0, 204)
+        Me.btnCubiertas.Name = "btnCubiertas"
+        Me.btnCubiertas.Size = New System.Drawing.Size(228, 55)
+        Me.btnCubiertas.TabIndex = 2
+        Me.btnCubiertas.Text = "Cubiertas"
+        Me.btnCubiertas.UseVisualStyleBackColor = False
+        '
         'btnCamiones
         '
-        Me.btnCamiones.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(69, Byte), Integer))
+        Me.btnCamiones.BackColor = System.Drawing.Color.Black
         Me.btnCamiones.Dock = System.Windows.Forms.DockStyle.Top
-        Me.btnCamiones.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(122, Byte), Integer), CType(CType(61, Byte), Integer))
+        Me.btnCamiones.FlatAppearance.BorderColor = System.Drawing.Color.Silver
+        Me.btnCamiones.FlatAppearance.BorderSize = 2
         Me.btnCamiones.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnCamiones.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnCamiones.Font = New System.Drawing.Font("Calibri", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnCamiones.Location = New System.Drawing.Point(0, 149)
         Me.btnCamiones.Name = "btnCamiones"
         Me.btnCamiones.Size = New System.Drawing.Size(228, 55)
@@ -74,7 +92,7 @@ Partial Class FrmPrincipal
         '
         'pbLogo
         '
-        Me.pbLogo.BackColor = System.Drawing.SystemColors.Control
+        Me.pbLogo.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.pbLogo.BackgroundImage = CType(resources.GetObject("pbLogo.BackgroundImage"), System.Drawing.Image)
         Me.pbLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.pbLogo.Dock = System.Windows.Forms.DockStyle.Fill
@@ -84,46 +102,23 @@ Partial Class FrmPrincipal
         Me.pbLogo.TabIndex = 0
         Me.pbLogo.TabStop = False
         '
-        'PictureBox1
-        '
-        Me.PictureBox1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(230, 0)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(902, 719)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
-        Me.PictureBox1.TabIndex = 1
-        Me.PictureBox1.TabStop = False
-        '
-        'btnCubiertas
-        '
-        Me.btnCubiertas.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(69, Byte), Integer))
-        Me.btnCubiertas.Dock = System.Windows.Forms.DockStyle.Top
-        Me.btnCubiertas.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(122, Byte), Integer), CType(CType(61, Byte), Integer))
-        Me.btnCubiertas.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnCubiertas.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnCubiertas.Location = New System.Drawing.Point(0, 204)
-        Me.btnCubiertas.Name = "btnCubiertas"
-        Me.btnCubiertas.Size = New System.Drawing.Size(228, 55)
-        Me.btnCubiertas.TabIndex = 2
-        Me.btnCubiertas.Text = "Cubiertas"
-        Me.btnCubiertas.UseVisualStyleBackColor = False
-        '
         'FrmPrincipal
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 19.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(122, Byte), Integer), CType(CType(61, Byte), Integer))
+        Me.BackColor = System.Drawing.Color.Black
+        Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.ClientSize = New System.Drawing.Size(1132, 719)
-        Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.PanelMenu)
         Me.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ForeColor = System.Drawing.SystemColors.ActiveCaption
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow
         Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "FrmPrincipal"
         Me.PanelMenu.ResumeLayout(False)
         Me.PanelLogo.ResumeLayout(False)
         CType(Me.pbLogo, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -133,5 +128,4 @@ Partial Class FrmPrincipal
     Friend WithEvents pbLogo As PictureBox
     Friend WithEvents btnCamiones As Button
     Friend WithEvents btnCubiertas As Button
-    Friend WithEvents PictureBox1 As PictureBox
 End Class
