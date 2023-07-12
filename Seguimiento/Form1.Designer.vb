@@ -28,6 +28,7 @@ Partial Class FrmPrincipal
         Me.btnCamiones = New System.Windows.Forms.Button()
         Me.PanelLogo = New System.Windows.Forms.Panel()
         Me.pbLogo = New System.Windows.Forms.PictureBox()
+        Me.DirectorySearcher1 = New System.DirectoryServices.DirectorySearcher()
         Me.PanelMenu.SuspendLayout()
         Me.PanelLogo.SuspendLayout()
         CType(Me.pbLogo, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -102,6 +103,12 @@ Partial Class FrmPrincipal
         Me.pbLogo.TabIndex = 0
         Me.pbLogo.TabStop = False
         '
+        'DirectorySearcher1
+        '
+        Me.DirectorySearcher1.ClientTimeout = System.TimeSpan.Parse("-00:00:01")
+        Me.DirectorySearcher1.ServerPageTimeLimit = System.TimeSpan.Parse("-00:00:01")
+        Me.DirectorySearcher1.ServerTimeLimit = System.TimeSpan.Parse("-00:00:01")
+        '
         'FrmPrincipal
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 19.0!)
@@ -128,4 +135,5 @@ Partial Class FrmPrincipal
     Friend WithEvents pbLogo As PictureBox
     Friend WithEvents btnCamiones As Button
     Friend WithEvents btnCubiertas As Button
+    Friend WithEvents DirectorySearcher1 As DirectoryServices.DirectorySearcher
 End Class
