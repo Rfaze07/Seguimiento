@@ -20,4 +20,8 @@
     Private Sub btnCamiones_Click(sender As Object, e As EventArgs) Handles btnCamiones.Click
         AbrirFormHijo(frmCamiones)
     End Sub
+
+    Private Sub btnCubiertas_Click(sender As Object, e As EventArgs) Handles btnCubiertas.Click
+        AbrirFormHijo(frmCubiertas)
+    End Sub
 End Class

@@ -38,7 +38,7 @@ Partial Class FrmPrincipal
         '
         Me.PanelMenu.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(163, Byte), Integer), CType(CType(82, Byte), Integer))
         Me.PanelMenu.BackgroundImage = CType(resources.GetObject("PanelMenu.BackgroundImage"), System.Drawing.Image)
-        Me.PanelMenu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.PanelMenu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.PanelMenu.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.PanelMenu.Controls.Add(Me.btnCubiertas)
         Me.PanelMenu.Controls.Add(Me.btnCamiones)
@@ -93,7 +93,7 @@ Partial Class FrmPrincipal
         '
         'pbLogo
         '
-        Me.pbLogo.BackColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.pbLogo.BackColor = System.Drawing.Color.Black
         Me.pbLogo.BackgroundImage = CType(resources.GetObject("pbLogo.BackgroundImage"), System.Drawing.Image)
         Me.pbLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.pbLogo.Dock = System.Windows.Forms.DockStyle.Fill
