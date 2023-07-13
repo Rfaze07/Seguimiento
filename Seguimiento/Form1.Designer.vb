@@ -28,7 +28,7 @@ Partial Class FrmPrincipal
         Me.btnCamiones = New System.Windows.Forms.Button()
         Me.PanelLogo = New System.Windows.Forms.Panel()
         Me.pbLogo = New System.Windows.Forms.PictureBox()
-        Me.DirectorySearcher1 = New System.DirectoryServices.DirectorySearcher()
+        Me.panelFormHijo = New System.Windows.Forms.Panel()
         Me.PanelMenu.SuspendLayout()
         Me.PanelLogo.SuspendLayout()
         CType(Me.pbLogo, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -43,7 +43,7 @@ Partial Class FrmPrincipal
         Me.PanelMenu.Controls.Add(Me.btnCubiertas)
         Me.PanelMenu.Controls.Add(Me.btnCamiones)
         Me.PanelMenu.Controls.Add(Me.PanelLogo)
-        Me.PanelMenu.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.PanelMenu.Cursor = System.Windows.Forms.Cursors.Arrow
         Me.PanelMenu.Dock = System.Windows.Forms.DockStyle.Left
         Me.PanelMenu.ForeColor = System.Drawing.SystemColors.ControlDarkDark
         Me.PanelMenu.Location = New System.Drawing.Point(0, 0)
@@ -103,24 +103,28 @@ Partial Class FrmPrincipal
         Me.pbLogo.TabIndex = 0
         Me.pbLogo.TabStop = False
         '
-        'DirectorySearcher1
+        'panelFormHijo
         '
-        Me.DirectorySearcher1.ClientTimeout = System.TimeSpan.Parse("-00:00:01")
-        Me.DirectorySearcher1.ServerPageTimeLimit = System.TimeSpan.Parse("-00:00:01")
-        Me.DirectorySearcher1.ServerTimeLimit = System.TimeSpan.Parse("-00:00:01")
+        Me.panelFormHijo.BackgroundImage = CType(resources.GetObject("panelFormHijo.BackgroundImage"), System.Drawing.Image)
+        Me.panelFormHijo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.panelFormHijo.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.panelFormHijo.Location = New System.Drawing.Point(230, 0)
+        Me.panelFormHijo.Name = "panelFormHijo"
+        Me.panelFormHijo.Size = New System.Drawing.Size(902, 719)
+        Me.panelFormHijo.TabIndex = 1
         '
         'FrmPrincipal
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 19.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Black
-        Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
-        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.ClientSize = New System.Drawing.Size(1132, 719)
+        Me.Controls.Add(Me.panelFormHijo)
         Me.Controls.Add(Me.PanelMenu)
         Me.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ForeColor = System.Drawing.SystemColors.ActiveCaption
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "FrmPrincipal"
         Me.PanelMenu.ResumeLayout(False)
@@ -135,5 +139,5 @@ Partial Class FrmPrincipal
     Friend WithEvents pbLogo As PictureBox
     Friend WithEvents btnCamiones As Button
     Friend WithEvents btnCubiertas As Button
-    Friend WithEvents DirectorySearcher1 As DirectoryServices.DirectorySearcher
+    Friend WithEvents panelFormHijo As Panel
 End Class
